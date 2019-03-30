@@ -1,0 +1,33 @@
+/* #heading {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+} */
+
+.container {
+    width: 60%;
+    
+}
+
+#random {
+    width: 100%;
+    height: 80px;
+}
+
+#score, #wins_losses {
+    width: 100%;
+    height: 150px;
+}
+
+.crystalDiv {
+    width: 100%;
+    height: 150px;
+}
+
+.crystal {
+
+}
+
+.transparent {
+	background: transparent url("assets/images/gem-icon.png");
+}
