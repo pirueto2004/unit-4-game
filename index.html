@@ -17,7 +17,7 @@
   <body >
     
     <div class="container">
-        <div class="row my-3">
+        <div class="row my-2">
             <div class="col-md-4 text-right ml-0">
                 <img src="assets/images/gem-icon.png">
             </div>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 bg-info text-dark p-3 mb-3" >
+            <div class="col-md-12 bg-danger text-dark p-2 mb-2" >
                 <div class="card " id="info">
                     <div class="card-body">
                         <p class="p-1 parInfo">You will be given a random number at the begining of the game.</p>
@@ -34,14 +34,14 @@
                         <p class="p-1 parInfo">You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
                         <p class="p-1 parInfo">The value of each crystal is hidden from you until you click on it.</p>
                         <p class="p-1 parInfo">Every time the game gets started, each crystal will get different value.</p>
-                        <button class="btn btn-sm btn-primary my-2" id="pDiv">Click me to hide paragraphs</button>
+                        <button class="btn btn-sm btn-primary my-2" id="pDiv">Click me to hide text</button>
                     </div>
                 </div>     
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4 mb-2 p-3">
+            <div class="col-md-4 mb-2 p-2">
                 <div class="card border border-info rounded" >
                     <div class="card-header bg-light text-center text-dark font-weight-bold">
                         Your Goal
@@ -50,16 +50,16 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mb-2 p-3">
+            <div class="col-md-4 mb-2 p-2">
                 <div class="card border border-success rounded">
                     <div class="card-header bg-light text-center font-weight-bold">
                         Your Score
                     </div>
-                    <div class="card-body bg-success text-white text-center p-3" id="score"></div>
+                    <div class="card-body bg-success text-white text-center p-2" id="score"></div>
                 </div>
             </div>
 
-            <div class="col-md-4 mb-2 p-3">
+            <div class="col-md-4  p-2">
                 <div class="card border border-warning rounded" >
                     <div class="card-header bg-light text-center text-dark font-weight-bold">
                         Wins & Losses
@@ -72,44 +72,42 @@
             </div>
             
         </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <div id="message"></div>
+        <div class="row mb-2 align-items-center">
+            <div class="col-md-6" >
+                <div class="text-center" id="message"></div> 
+            </div>
+            <div class="col-md-3 " >
+                <div class="text-center" id="playAgain"></div> 
+            </div>
+            <div class="col-md-3" >
+                <div class="text-center ml-auto" id="resetGame"></div> 
             </div>
         </div>
 
         <div class="row ">
-            <div class="col-md-3 mb-3 text-center align-items-center">
+            <div class="col-md-3 mb-2 text-center align-items-center">
                 <button type="button" name="crystal1" class="btn btn-outline-secondary crystal rounded " id="crystal1" data-toggle="button" aria-pressed="false">         
                     <img class="crystal" src="assets/images/gem-1.png">
                 </button>
-                <!-- <div id="crystal1" class="card-body bg-light border border-secondary rounded">
-                    <img class="crystal" src="assets/images/gem-1.png">
-                </div> -->
+                
             </div>
-            <div class="col-md-3 mb-3 text-center align-items-center">
+            <div class="col-md-3 mb-2 text-center align-items-center">
                 <button type="button" name="crystal2" class="btn btn-outline-secondary crystal rounded" id="crystal2" data-toggle="button" aria-pressed="false">         
                     <img src="assets/images/gem-2.png">
                 </button>
-                <!-- <div id="crystal2" class="card-body bg-light border border-secondary rounded">
-                    <img class="crystal" src="assets/images/gem-2.png">
-                </div> -->
+                
             </div>
-            <div class="col-md-3 mb-3 text-center align-items-center">
+            <div class="col-md-3 mb-2 text-center align-items-center">
                 <button type="button" name="crystal3" class="btn btn-outline-secondary crystal rounded" id="crystal3" data-toggle="button" aria-pressed="false">         
                     <img src="assets/images/gem-3.png">
                 </button>
-                <!-- <div id="crystal3" class="card-body bg-light border border-secondary rounded">
-                    <img class="crystal" src="assets/images/gem-3.png">
-                </div> -->
+               
             </div>
             <div class="col-md-3 mb-3 text-center align-items-center">
                 <button type="button" name="crystal4" class="btn btn-outline-secondary crystal rounded" id="crystal4" data-toggle="button" aria-pressed="false">         
                     <img src="assets/images/gem-4.png">
                 </button>
-                <!-- <div id="crystal4" class="card-body bg-light border border-secondary rounded">
-                    <img class="crystal" src="assets/images/gem-4.png">
-                </div> -->
+                
             </div>
         </div>
     </div>
@@ -119,12 +117,7 @@
     
     </script>
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     
 </body>
 </html>
