@@ -9,23 +9,24 @@
     
 }
 
-#random {
+#random, #score {
     width: 100%;
     height: 80px;
 }
 
-#score, #wins_losses {
+#wins_losses {
     width: 100%;
     height: 150px;
+}
+
+#message {
+    width: 400px;
+    margin: 5px auto;
 }
 
 .crystalDiv {
     width: 100%;
     height: 150px;
-}
-
-.crystal {
-
 }
 
 .transparent {
