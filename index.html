@@ -14,14 +14,14 @@
 
     <title>Crystals Collector Game</title>
   </head>
-  <body >
+  <body class="bg">
     
     <div class="container">
         <div class="row my-2">
-            <div class="col-md-4 text-right ml-0">
-                <img src="assets/images/gem-icon.png">
+            <div class="col-sm-4 text-right ml-0">
+                <img class="img-fluid" src="assets/images/gem-icon.png">
             </div>
-            <div class="col-md-8">
+            <div class="col-sm-8">
                <h1 class="h1 text-danger text-left py-2" id="heading">Crystal Collector</h1>
             </div>
         </div>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 mb-2 p-2">
+            <div class="col-12 col-md-4 mb-2 p-2">
                 <div class="card border border-info rounded" >
                     <div class="card-header bg-light text-center text-dark font-weight-bold">
                         Your Goal
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mb-2 p-2">
+            <div class="col-12 col-md-4 mb-2 p-2">
                 <div class="card border border-success rounded">
                     <div class="card-header bg-light text-center font-weight-bold">
                         Your Score
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4  p-2">
+            <div class="col-12 col-md-4  p-2">
                 <div class="card border border-warning rounded" >
                     <div class="card-header bg-light text-center text-dark font-weight-bold">
                         Wins & Losses
@@ -73,45 +73,43 @@
             
         </div>
         <div class="row mb-2 align-items-center">
-            <div class="col-md-6" >
+            <div class="col-12 col-md-6" >
                 <div class="text-center" id="message"></div> 
             </div>
-            <div class="col-md-3 " >
+            <div class="col-12 col-md-3 mb-2" >
                 <div class="text-center" id="playAgain"></div> 
             </div>
-            <div class="col-md-3" >
+            <div class="col-12 col-md-3 mb-2" >
                 <div class="text-center ml-auto" id="resetGame"></div> 
             </div>
         </div>
 
-        <div class="row ">
-            <div class="col-md-3 mb-2 text-center align-items-center">
-                <button type="button" name="crystal1" class="btn btn-outline-secondary crystal rounded " id="crystal1" data-toggle="button" aria-pressed="false">         
-                    <img class="crystal" src="assets/images/gem-1.png">
+        <div class="row jumbotron py-2 border border-primary rounded" id="myRow">
+            <div class="col-6 col-sm-6 my-2 mx-0 px-1 text-right">
+                <button type="button" name="crystal1" class="btn btn-outline-secondary crystal rounded" id="crystal1" data-toggle="button" aria-pressed="false">         
+                    <img class="img-fluid" src="assets/images/gem-1.png">
                 </button>
                 
-            </div>
-            <div class="col-md-3 mb-2 text-center align-items-center">
+            
                 <button type="button" name="crystal2" class="btn btn-outline-secondary crystal rounded" id="crystal2" data-toggle="button" aria-pressed="false">         
-                    <img src="assets/images/gem-2.png">
+                    <img class="img-fluid" src="assets/images/gem-2.png">
                 </button>
                 
             </div>
-            <div class="col-md-3 mb-2 text-center align-items-center">
+            <div class="col-6 col-sm-6 my-2 mx-0 px-0 text-left">
                 <button type="button" name="crystal3" class="btn btn-outline-secondary crystal rounded" id="crystal3" data-toggle="button" aria-pressed="false">         
-                    <img src="assets/images/gem-3.png">
+                    <img class="img-fluid" src="assets/images/gem-3.png">
                 </button>
                
-            </div>
-            <div class="col-md-3 mb-3 text-center align-items-center">
+            
                 <button type="button" name="crystal4" class="btn btn-outline-secondary crystal rounded" id="crystal4" data-toggle="button" aria-pressed="false">         
-                    <img src="assets/images/gem-4.png">
+                    <img class="img-fluid" src="assets/images/gem-4.png">
                 </button>
                 
             </div>
         </div>
     </div>
-    
+</div> 
     <!-- Javascript file -->
     <script src="assets/javascript/game.js" type="text/javascript">
     

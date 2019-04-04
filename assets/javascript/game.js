@@ -70,7 +70,7 @@
 
     function addToScore(val) {
       totalScore += val;
-      $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
+      $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
     }
    
     
@@ -84,7 +84,7 @@
       
        targetScore = generateRandomNumber(19,120);
        $("#random").html('<h2 class="h2 p-2">' + targetScore + '</h2>');
-       $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
+       $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
        $('#wins').text('Wins:  ' + wins);
        $('#losses').text('Losses:  ' + losses);
        $('#message').html('');
@@ -102,10 +102,7 @@
           //Each crystal should have a random hidden value between 1 - 12 
           randomCrystal1 = generateRandomNumber(1,12);
           addToScore(randomCrystal1);
-          // myAudio.stop();
-          // totalScore += randomCrystal1;
-          // $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
-          // crystalNumbers.push(randomCrystal1);
+          
         });
 
         $('#crystal2').on("click", function(){
@@ -113,9 +110,7 @@
           //Each crystal should have a random hidden value between 1 - 12 
           randomCrystal2 = generateRandomNumber(1,12);
           addToScore(randomCrystal2);
-          // totalScore += randomCrystal2;
-          // $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
-          // crystalNumbers.push(randomCrystal2);
+         
         });
 
         $('#crystal3').on("click", function(){
@@ -123,10 +118,7 @@
           //Each crystal should have a random hidden value between 1 - 12 
           randomCrystal3 = generateRandomNumber(1,12);
           addToScore(randomCrystal3);
-          
-          // totalScore += randomCrystal3;
-          // $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
-          // crystalNumbers.push(randomCrystal3);
+         
         });
 
         $('#crystal4').on("click", function(){
@@ -134,10 +126,7 @@
           //Each crystal should have a random hidden value between 1 - 12 
           randomCrystal4 = generateRandomNumber(1,12);
           addToScore(randomCrystal4);
-          // myAudio.stop();
-          // totalScore += randomCrystal4;
-          // $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
-          // crystalNumbers.push(randomCrystal4);
+        
         });
     
         $(".crystal").on("click", function() {
@@ -146,7 +135,7 @@
             myAudio.play();
             wins++;
             session_wins = wins;
-            $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
+            $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
             
             $('#wins').text('Wins:  ' + session_wins);
             setTimeout(function() {
@@ -167,7 +156,7 @@
             losses++;
             myAudio.play();
             session_losses = losses;
-            $('#score').html('<h3 class="h3 p-1">' + totalScore + '</h3>');
+            $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
             
             $('#losses').text('Losses:  ' + session_losses);
             setTimeout(function() {
@@ -184,14 +173,7 @@
             });
           }
           
-        });
-    
-    
-     
-    
-    
-    
-    
+        });  
   });
     
     

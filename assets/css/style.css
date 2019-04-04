@@ -1,14 +1,10 @@
-/* #heading {
-    width: 40%;
-    margin: 0 auto;
-    padding: 10px;
-} */
 
 body {
-    margin: 0;
-    height:100%;
-}
+    height: 100%;
+    
+  }
 
+  
 .container {
     width: 60%;
     
@@ -25,16 +21,24 @@ body {
 }
 
 #message {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 5px auto;
 }
 
-.crystalDiv {
+.crystal {
     width: 100%;
-    height: 150px;
+    max-width: 110px;
+    height: 110px;
+    
+    
 }
 
-
+#myRow {
+    background-image: url('assets/images/bg-pic3.png');
+    background-size: cover;
+    height: 100%;
+}
 
 .transparent {
 	background: transparent url("assets/images/gem-icon.png");
