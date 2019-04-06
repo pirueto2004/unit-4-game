@@ -9,6 +9,11 @@ body {
     width: 60%;
     
 }
+#heading {
+    width: 100%;
+    max-width: 400px;
+    padding: 2px 2px;
+}
 
 #random, #score {
     width: 100%;

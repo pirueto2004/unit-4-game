@@ -1,5 +1,17 @@
   $(document).ready(function(){
-    $('body').css({"background-color": "white", "background-image": "linear-gradient(white, lightgray)"});
+    function setBackgroundImage(myObject, imageUrl) {
+      myObject.css({
+                   "background-image": "url(" + imageUrl + ")",
+                  //  "background-size": "cover",
+                   "background-position": "center",
+                   
+                   });
+   }
+
+    var body = $("body");
+    var imageUrl = 'assets/images/bg-pic2.jpg';
+    setBackgroundImage(body, imageUrl);
+    // $('body').css({"background-color": "white", "background-image": "linear-gradient(white, lightgray)"});
 
     var targetScore;
     
