@@ -39,11 +39,6 @@ body {
     
 }
 
-#myRow {
-    background-image: url('assets/images/bg-pic3.png');
-    background-size: cover;
-    height: 100%;
-}
 
 .transparent {
 	background: transparent url("assets/images/gem-icon.png");

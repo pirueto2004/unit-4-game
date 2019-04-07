@@ -9,7 +9,10 @@
     var body = $("body");
     var imageUrl = 'assets/images/bg-pic2.jpg';
     setBackgroundImage(body, imageUrl);
-    // $('body').css({"background-color": "white", "background-image": "linear-gradient(white, lightgray)"});
+    
+    var crystalsRow = $("#myRow");
+    var imageUrl1 = 'assets/images/sparkling-bg.gif';
+    setBackgroundImage(crystalsRow, imageUrl1);
 
     var targetScore;
     
@@ -82,6 +85,7 @@
       totalScore += val;
       $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
     }
+
    
     function showButtons() {
       //Give options to Play Again or Reset game  
