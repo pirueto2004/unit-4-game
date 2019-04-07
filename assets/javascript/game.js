@@ -2,11 +2,9 @@
     function setBackgroundImage(myObject, imageUrl) {
       myObject.css({
                    "background-image": "url(" + imageUrl + ")",
-                  //  "background-size": "cover",
-                   "background-position": "center",
-                   
+                   "background-position": "center", 
                    });
-   }
+    }
 
     var body = $("body");
     var imageUrl = 'assets/images/bg-pic2.jpg';
@@ -85,7 +83,18 @@
       $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
     }
    
-    
+    function showButtons() {
+      //Give options to Play Again or Reset game  
+      $('#playAgain').html('<button type="button" class="btn btn-warning btn-sm">' + ' PLAY AGAIN ' + '</button>');
+      $('#resetGame').html('<button type="button" class="btn btn-danger btn-sm">' + ' RESET GAME ' + '</button>');
+      $('#playAgain').click(function(){
+        newGame();
+      });
+      $('#resetGame').click(function(){
+        initializeGame();
+      });   
+    }
+
     function newGame() {
       totalScore = 0;
       
@@ -141,48 +150,32 @@
         
         });
     
-        $(".crystal").on("click", function() {
-          
+        $(".crystal").on("click", function() {    
+          //if your score matches your goal you win and do the following
           if (totalScore === targetScore) {
             myAudio.play();
             wins++;
             session_wins = wins;
-            $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
-            
+            //Update the score and wins
+            $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');  
             $('#wins').text('Wins:  ' + session_wins);
-            setTimeout(function() {
-              $('#message').html('<h3 class="h3 p-1">' + ' CONGRATS, YOU WON!' + '</h3>').css({"background-color": "red", "color": "black"});
-              
-              $('#playAgain').html('<button type="button" class="btn btn-warning btn-sm">' + ' PLAY AGAIN ' + '</button>');
-              $('#resetGame').html('<button type="button" class="btn btn-danger btn-sm">' + ' RESET GAME ' + '</button>');
-            }, 100);
-              $('#playAgain').click(function(){
-                newGame();
-              });
-              $('#resetGame').click(function(){
-                initializeGame();
-              });
-              
+            //Congrats for winning
+            $('#message').html('<h3 class="h3 p-1">' + ' CONGRATS, YOU WON!' + '</h3>').css({"background-color": "red", "color": "black"});
+            showButtons();
+            
           }
+          //if your score is greater than your goal you lose and do the following
           else if (totalScore > targetScore) {
             losses++;
             myAudio.play();
             session_losses = losses;
-            $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');
-            
+            //Update the score and losses
+            $('#score').html('<h2 class="h2 p-1">' + totalScore + '</h2>');      
             $('#losses').text('Losses:  ' + session_losses);
-            setTimeout(function() {
-              $('#message').html('<h3 class="h3 p-1">' + ' SORRY, YOU LOSE!' + '</h3>').css({"background-color": "red", "color": "white"});
-              // myAudio1.play();
-              $('#playAgain').html('<button type="button" class="btn btn-warning btn-sm">' + ' PLAY AGAIN ' + '</button>');
-              $('#resetGame').html('<button type="button" class="btn btn-danger btn-sm">' + ' RESET GAME ' + '</button>');
-            }, 100);
-            $('#playAgain').click(function(){
-              newGame();
-            });
-            $('#resetGame').click(function(){
-              initializeGame();
-            });
+            //Message for losing
+            $('#message').html('<h3 class="h3 p-1">' + ' SORRY, YOU LOSE!' + '</h3>').css({"background-color": "red", "color": "white"});
+            showButtons();
+           
           }
           
         });  
